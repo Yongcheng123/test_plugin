@@ -1,5 +1,5 @@
 # test_plugin
-A bundle of ChimeraX (for macOS)
+This is a deeplearning based bundle for ChimeraX (for macOS).
 
 # Requirements
 
