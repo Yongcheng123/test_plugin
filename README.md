@@ -22,7 +22,7 @@ A bundle of ChimeraX (for macOS)
 
   * [Download the test_plugin bundle](https://github.com/Yongcheng123/test_plugin)
 
-> I recommend you download this file to you Desktop directory, so that you don't have to modify any path.
+>  I recommend you download this file to you Desktop directory, so that you don't have to modify any path.
 
   * Install the bundle into ChimeraX
 
