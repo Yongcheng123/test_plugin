@@ -1,0 +1,34 @@
+This program is used to run unet-GEM saved model. 
+
+The steps are as follows-
+
+Input:  This program takes 4 inputs, all input files need to be placed in 'data' directory
+
+a. testingList text files: testingList_Stride.txt - text files  which contains the list of proteins/chains for testing. Please check the provided 'testingList_Stride.txt' file for format. You just need to modify this to use different data.
+
+b. PDB file: You need to provide .pdb file in provided sample 'data' directory, as the program reads from that directory.
+   Please check the provided sample 'data' directory to see how to put .pdb file.
+
+        The location and format should follow-
+        data/EMDBdata_6/EMBD_ID_PDB_ID/CHAIN_ID_fitted.pdb
+  
+c. mrc file: You need to provide the .mrc file. You need to put this in provided sample 'data' directory, as the program reads from that directory. Please check the provided sample 'data' directory to see how to put .mrc file.
+
+        The location and format should follow-
+        data/EMDBdata_6/EMBD_ID_PDB_ID/CHAIN_ID-1.0APIX.mrc
+  
+d.  Stride label text file: You need to provide the Stride label file
+   in provided sample 'data' directory, same way as the .pdb and .mrc file .
+   Please check the provided sample 'data' directory to see how to put Stride label file.
+
+        The location and format should follow-
+        data/EMDBdata_6/EMBD_ID_PDB_ID/CHAIN_ID_label_stride.txt
+  
+Note: The program first looks for existing .pt files, if not exist, creates .pt file - 'testingList.pt' from the input file testingList_Stride.txt and use it afterwards. Therefore, if you use a different data list later, you need to delete the existing .pt files.
+  
+After you have all the required input files you can run the following shell script- sbatch gem_test.slurm 
+
+
+Output:
+    - The predicted label, mrc file will be saved in "output/testing_predictions/" folder. 
+    - The true labels will be saved in "output/true_labels/" folder.
