@@ -58,3 +58,8 @@ minutes.
 
 The result can be found from "./ChimeraX/output/labels" and "./ChimeraX/output/visuals".
 
+For a smaple output, it can be found in the directory of ./ChimeraX.
+
+# Contact Me
+Email: ymu004@odu.edu
+
