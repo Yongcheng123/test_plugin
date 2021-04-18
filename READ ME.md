@@ -1,5 +1,7 @@
 # Requirements
 
+---
+
   * ChimeraX
 
 > Download [ChimeraX](https://www.cgl.ucsf.edu/chimerax/download.html). 
@@ -15,64 +17,52 @@
 
 >   [importlib-metadata >=0.17](https://pypi.org/project/importlib-metadata/#history)
 
-# Install the bundle
+# Download and Install the bundle (for macOS)
 
-# Sample Input & Output
+---
 
-If run without command line arguments, it will be use ./data/sensors-2018.12.26-no-labels.txt
-using
+  * [Download the test_plugin bundle](https://github.com/Yongcheng123/test_plugin)
 
+> I recommend you download this file to you Desktop directory, so that you don't have to modify any path.
+
+  * Install the bundle into ChimeraX
+
+> 1. Run ChimeraX, you will see the Command box on the bottom
+
+> 2. Build bundle by using command: devel build /Users/USER_NAME/Desktop/test_plugin
+
+> 3. Install bundle by using command:   devel install /Users/USER_NAME/Desktop/test_plugin
+
+# Sample Input
+
+---
+
+  * This bundle will take four input file
+
+> 1. testingList_Stride.txt (path: test_plugin/ChimeraX/data/). The testing data
+> information will be list in this file.
+
+> 2. testingList.pt (path: test_plugin/ChimeraX/data/)
+
+> 3. model.chkpt (path: test_plugin/ChimeraX/)
+
+> 4. pdb and mrc (path: test_plugin/ChimeraX/data/EMDBdata_6/)
+
+# Run this bundle
+
+---
+
+Use the below command to run the bundle:
 ```
-python3 main.py
+testdl
 ```
+You may check "testdl.log" (typically under the directory of './ChimeraX/') to track the running status. This basically will take more than five
+minutes.
 
-the following usage message will be displayed. 
+# Sample output file
 
-```
-   Time (sec)  core-1  core-2  core-3  core-4
-0           0    61.0    63.0    50.0    58.0
-1          30    80.0    81.0    68.0    77.0
-2          60    62.0    63.0    52.0    60.0
-3          90    83.0    82.0    70.0    79.0
-4         120    68.0    69.0    58.0    65.0
-```
+---
+
+The result can be found from "./ChimeraX/output/labels" and "./ChimeraX/output/visuals".
+
 Output files will be automatically generated to ./output/sensors-2018.12.26/***.txt
-
----
-
-If run using argument, an input file path need to be added
-
-```
-python3 main.py --file ./data/(input file path)
-```
-
-The displayed message will *simliar* to
-
-```
-   Time (sec)  core-1  core-2  core-3  core-4
-0           0    61.0    63.0    50.0    58.0
-1          30    80.0    81.0    68.0    77.0
-2          60    62.0    63.0    52.0    60.0
-3          90    83.0    82.0    70.0    79.0
-4         120    68.0    69.0    58.0    65.0
-
-```
-
-Output files will be automatically generated to ./output/(input_file_info)/***.txt
-
----
-
-Sample output file
-```
-0     <= x < 30   ; y_0  = 61.0000 + 0.6333x; interpolation
-30    <= x < 60   ; y_1  = 98.0000 + -0.6000x; interpolation
-60    <= x < 90   ; y_2  = 20.0000 + 0.7000x; interpolation
-90    <= x < 120  ; y_3  = 128.0000 + -0.5000x; interpolation
-120   <= x < 150  ; y_4  = 12.0000 + 0.4667x; interpolation
-...
-...
-...
-35550 <= x < 35580; y_1185 = -20084.0000 + 0.5667x; interpolation
-35580 <= x < 35610; y_1186 = -3480.0000 + 0.1000x; interpolation
-0     <= x < 35610; y_least_square = -0.0001 + 77.1459x; least-squares
-```
