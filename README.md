@@ -24,7 +24,7 @@ A bundle of ChimeraX (for macOS)
 
 >  I recommend you download this file to you Desktop directory, so that you don't have to modify any path.
 
-  * Install the bundle into ChimeraX
+  * Install the bundle into ChimeraX (Change USER_NAME to a specific one)
 
 > 1. Run ChimeraX, you will see the Command box on the bottom
 
