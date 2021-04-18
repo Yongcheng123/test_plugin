@@ -1,6 +1,5 @@
 # Requirements
 
----
 
   * ChimeraX
 
@@ -19,7 +18,6 @@
 
 # Download and Install the bundle (for macOS)
 
----
 
   * [Download the test_plugin bundle](https://github.com/Yongcheng123/test_plugin)
 
@@ -35,9 +33,8 @@
 
 # Sample Input
 
----
 
-  * This bundle will take four input file
+  * This bundle will take four input files
 
 > 1. testingList_Stride.txt (path: test_plugin/ChimeraX/data/). The testing data
 > information will be list in this file.
@@ -50,8 +47,6 @@
 
 # Run this bundle
 
----
-
 Use the below command to run the bundle:
 ```
 testdl
@@ -60,8 +55,6 @@ You may check "testdl.log" (typically under the directory of './ChimeraX/') to t
 minutes.
 
 # Sample output file
-
----
 
 The result can be found from "./ChimeraX/output/labels" and "./ChimeraX/output/visuals".
 
