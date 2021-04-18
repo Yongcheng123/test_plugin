@@ -58,4 +58,3 @@ minutes.
 
 The result can be found from "./ChimeraX/output/labels" and "./ChimeraX/output/visuals".
 
-Output files will be automatically generated to ./output/sensors-2018.12.26/***.txt
