@@ -10,7 +10,7 @@ A bundle of ChimeraX (for macOS)
   * Dependencies
 >   ChimeraX-Core version="~=1.0"
 
->   Python3
+>   Python3.7 (or higher are recommended)
 
 >   [Torch >=1.4.0](https://pytorch.org/)
 
