@@ -32,6 +32,7 @@ will be displayed without the ChimeraX- prefix.
     <Dependency name="importlib-metadata" version="~=0.17"/>
     <Dependency name="torch" version="~=1.4.0"/>
     <Dependency name="numpy" version="~=1.16.4"/>
+    <Dependency name="quadprog" version="~=0.1.8"/>
   </Dependencies>
 
   <!-- Python and ChimeraX-specific classifiers
